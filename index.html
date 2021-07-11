@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <img class="logo" src="Education Camp.png" alt="logo" />
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="#menuitems">Home</a></li>
+          <li><a href="#features">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section id="background">
+        <div class="container">
+          <div class="box">
+            <span class="text0">Payment Gateway Integration</span>
+            <span class="text1">By Sanjana Jalgaonkar</span>
+            <span class="text2">Children Education Donation Website</span>
+            <span class="text3"
+              >Join us to educate Children.<br />Join us to educate
+              India.</span>
+          </div>
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HWVVFeDzDS5MYf" async> </script> </form>
+        </div>
+      </section>
+    </div>
+    <section id="features">
+      <div class="title-text">
+        <p>About</p>
+        <h1>Our Resources</h1>
+      </div>
+      <div class="feature-box">
+        <div class="features">
+          <h1>Scholarship Services</h1>
+          <div class="feat-desc">
+            <div class="feat-text">
+              <p>Scholarship services are provided to fulfill a child's dream of studying and persuing his/her career.</p>
+            </div>
+          </div>
+          <h1>Student Exchange Program</h1>
+          <div class="feat-desc">
+            <div class="feat-text">
+              <p>Children who want to study in some other country are provided with best in class student exchange programs and are provided with scholarships.</p>
+            </div>
+          </div>
+          <h1>Providing Mentors</h1>
+          <div class="feat-desc">
+            <div class="feat-text">
+              <p>Mentors are provided to guide children to the right path and make sure they understand their dreams and help fulfill them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-img">
+          <img src="image.jpg" />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>If you want to contact us fill out the following form.<br>You can also contact us on our Email and Phone Number.</p>
+      </div>
+      <div class="container-box">
+        <div class="contact-info">
+          <div class="c-box">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>74, Laxmi Nagar,<br />Nagpur, Maharastra-440010</p>
+            </div>
+          </div>
+          <div class="c-box">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 8753215964</p>
+            </div>
+          </div>
+          <div class="c-box">
+              <div class="icon">
+                  <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="text">
+                  <h3>Email</h3>
+                  <p><educationcamp@gmail class="com">educationcamp@gmail.com</p>
+              </div>
+          </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <h2>Submit Queries</h2>
+                <div class="input-box">
+                  <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required="required">
+                    
+                </div>
+                <div class="input-box">
+                  <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required="required">
+                    
+                </div>
+                <div class="input-box">
+                  <label for="reason">Reason</label>
+                  <input type="text" name="reason" id="reason" required="required">
+                  
+              </div>
+                <div class="input-box">
+                    <input id="submit" type="submit" name="submit" required="send">
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+        <p class="copyright">Copyright 2021-@educationcamp-Sanjana Jalgaonkar | All Rights Reserved | Contact Us- +91 8753215964</p>
+        <p class="copyright-1">EDUCATION CAMP</p>
+    </section>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+  </body>
+</html>
